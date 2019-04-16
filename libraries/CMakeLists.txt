@@ -1,6 +1,7 @@
 add_subdirectory( fc )
 add_subdirectory( appbase )
 
+
 #turn tools&tests off; not needed for library build
 set(BUILD_TESTS OFF CACHE BOOL "Build GTest-based tests")
 set(BUILD_TOOLS OFF CACHE BOOL "Build wabt tools")
@@ -11,7 +12,7 @@ set(ENABLE_STATIC ON)
 set(CMAKE_MACOSX_RPATH OFF)
 set(BUILD_ONLY_LIB ON CACHE BOOL "Library only build")
 message(STATUS "Starting yubihsm configuration...")
-
+message(STATUS "yubihsm configuration complete")
 
 get_property(_CTEST_CUSTOM_TESTS_IGNORE GLOBAL PROPERTY CTEST_CUSTOM_TESTS_IGNORE)
 set_property(GLOBAL PROPERTY CTEST_CUSTOM_TESTS_IGNORE
